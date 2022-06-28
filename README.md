@@ -1,9 +1,11 @@
 # WareHouse Localization using AprilTag
 
 ## Installation
-```bash
-$ mkdir -p /yourwsname
-$ git clone 
+```console
+$ mkdir -p ~/yourwsname
+$ git clone https://github.com/Andreew9504089/AprilTag_Localization.git
+$ cd ~/yourwsname
+$ catkin_make
 ```
 ## Group Members and Work Distribution
 
