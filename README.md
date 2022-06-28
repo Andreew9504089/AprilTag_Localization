@@ -1,5 +1,10 @@
 # WareHouse Localization using AprilTag
 
+## Installation
+```bash
+$ mkdir -p /yourwsname
+$ git clone 
+```
 ## Group Members and Work Distribution
 
 ## Progress
