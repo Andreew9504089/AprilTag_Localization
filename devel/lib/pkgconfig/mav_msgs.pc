@@ -1,0 +1,8 @@
+prefix=/home/andrew/NCRL/AprilTag_Localization/devel
+
+Name: mav_msgs
+Description: Description of mav_msgs
+Version: 3.3.2
+Cflags: -I/home/andrew/NCRL/AprilTag_Localization/devel/include -I/home/andrew/NCRL/AprilTag_Localization/src/final_project/multirotor_geometry_control/mav_comm/mav_msgs/include -I/usr/include/eigen3
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs geometry_msgs trajectory_msgs

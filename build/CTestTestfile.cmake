@@ -1,0 +1,35 @@
+# CMake generated Testfile for 
+# Source directory: /home/andrew/NCRL/AprilTag_Localization/src
+# Build directory: /home/andrew/NCRL/AprilTag_Localization/build
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs("gtest")
+subdirs("final_project/husky/husky_desktop")
+subdirs("final_project/husky/husky_simulator")
+subdirs("final_project/multirotor_geometry_control/mav_comm/mav_comm")
+subdirs("final_project/multirotor_geometry_control/rotors_simulator/rotors_description")
+subdirs("final_project/multirotor_geometry_control/rotors_simulator/rotors_simulator")
+subdirs("final_project/husky/husky_msgs")
+subdirs("final_project/multirotor_geometry_control/rotors_simulator/rotors_comm")
+subdirs("final_project/multirotor_geometry_control/mav_comm/mav_msgs")
+subdirs("final_project/multirotor_geometry_control/gps")
+subdirs("final_project/multirotor_geometry_control/offb")
+subdirs("final_project/multirotor_geometry_control/plotmap")
+subdirs("final_project/multirotor_geometry_control/plottest")
+subdirs("final_project/husky/husky_control")
+subdirs("final_project/husky/husky_description")
+subdirs("final_project/husky/husky_gazebo")
+subdirs("final_project/husky/husky_navigation")
+subdirs("final_project/husky/husky_viz")
+subdirs("final_project/multirotor_geometry_control/rotors_simulator/rotors_evaluation")
+subdirs("final_project/multirotor_geometry_control/mav_comm/mav_planning_msgs")
+subdirs("final_project/multirotor_geometry_control/rotors_simulator/rotors_control")
+subdirs("final_project/multirotor_geometry_control/rotors_simulator/rotors_joy_interface")
+subdirs("final_project/multirotor_geometry_control/rotors_simulator/rqt_rotors")
+subdirs("final_project/multirotor_geometry_control/rotors_simulator/rotors_hil_interface")
+subdirs("final_project/apriltag_ros/apriltag_ros")
+subdirs("final_project/multirotor_geometry_control/path_planner")
+subdirs("realsense_gazebo_plugin")
+subdirs("final_project/multirotor_geometry_control/rotors_simulator/rotors_gazebo_plugins")
+subdirs("final_project/multirotor_geometry_control/rotors_simulator/rotors_gazebo")

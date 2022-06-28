@@ -1,0 +1,8 @@
+prefix=/home/andrew/NCRL/AprilTag_Localization/devel
+
+Name: husky_description
+Description: Description of husky_description
+Version: 0.6.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
