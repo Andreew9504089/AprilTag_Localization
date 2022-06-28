@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/offb/include/lpf.cpp
+lpf.h
+/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/offb/include/lpf.h
+
+/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/offb/include/lpf.h
+math.h
+/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/offb/include/math.h
+

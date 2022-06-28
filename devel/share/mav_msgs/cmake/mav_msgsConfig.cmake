@@ -67,7 +67,7 @@ set(mav_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(mav_msgs_SOURCE_PREFIX /home/andrew/NCRL/AprilTag_Localization/src/final_project/multirotor_geometry_control/mav_comm/mav_msgs)
+  set(mav_msgs_SOURCE_PREFIX /home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/mav_comm/mav_msgs)
   set(mav_msgs_DEVEL_PREFIX /home/andrew/NCRL/AprilTag_Localization/devel)
   set(mav_msgs_INSTALL_PREFIX "")
   set(mav_msgs_PREFIX ${mav_msgs_DEVEL_PREFIX})
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(mav_msgs_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/andrew/NCRL/AprilTag_Localization/devel/include;/home/andrew/NCRL/AprilTag_Localization/src/final_project/multirotor_geometry_control/mav_comm/mav_msgs/include;/usr/include/eigen3 " STREQUAL " ")
+if(NOT "/home/andrew/NCRL/AprilTag_Localization/devel/include;/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/mav_comm/mav_msgs/include;/usr/include/eigen3 " STREQUAL " ")
   set(mav_msgs_INCLUDE_DIRS "")
-  set(_include_dirs "/home/andrew/NCRL/AprilTag_Localization/devel/include;/home/andrew/NCRL/AprilTag_Localization/src/final_project/multirotor_geometry_control/mav_comm/mav_msgs/include;/usr/include/eigen3")
+  set(_include_dirs "/home/andrew/NCRL/AprilTag_Localization/devel/include;/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/mav_comm/mav_msgs/include;/usr/include/eigen3")
   if(NOT "https://github.com/ethz-asl/mav_comm/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ethz-asl/mav_comm/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "https://github.com/ethz-asl/mav_comm " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/andrew/NCRL/AprilTag_Localization/devel/include;/home/andrew/NCRL/
         message(FATAL_ERROR "Project 'mav_msgs' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'mav_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/andrew/NCRL/AprilTag_Localization/src/final_project/multirotor_geometry_control/mav_comm/mav_msgs/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'mav_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/mav_comm/mav_msgs/${idir}'.  ${_report}")
     endif()
     _list_append_unique(mav_msgs_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/andrew/NCRL/AprilTag_Localization/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/andrew/NCRL/AprilTag_Localization/devel/lib;/home/andrew/NCRL/AprilTag_Localization/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND mav_msgs_EXPORTED_TARGETS ${${mav_msgs_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "mav_msgs-msg-extras.cmake;/home/andrew/NCRL/AprilTag_Localization/src/final_project/multirotor_geometry_control/mav_comm/mav_msgs/cmake/export_flags.cmake")
+set(pkg_cfg_extras "mav_msgs-msg-extras.cmake;/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/mav_comm/mav_msgs/cmake/export_flags.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${mav_msgs_DIR}/${extra})

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/offb/include/rls.cpp
+rls.h
+/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/offb/include/rls.h
+
+/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/offb/include/rls.h
+stdio.h
+-
+iostream
+-
+vector
+-
+eigen3/Eigen/Core
+-
+eigen3/Eigen/Dense
+-
+

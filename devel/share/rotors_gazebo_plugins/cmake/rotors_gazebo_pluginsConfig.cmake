@@ -67,7 +67,7 @@ set(rotors_gazebo_plugins_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(rotors_gazebo_plugins_SOURCE_PREFIX /home/andrew/NCRL/AprilTag_Localization/src/final_project/multirotor_geometry_control/rotors_simulator/rotors_gazebo_plugins)
+  set(rotors_gazebo_plugins_SOURCE_PREFIX /home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo_plugins)
   set(rotors_gazebo_plugins_DEVEL_PREFIX /home/andrew/NCRL/AprilTag_Localization/devel)
   set(rotors_gazebo_plugins_INSTALL_PREFIX "")
   set(rotors_gazebo_plugins_PREFIX ${rotors_gazebo_plugins_DEVEL_PREFIX})
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(rotors_gazebo_plugins_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/andrew/NCRL/AprilTag_Localization/src/final_project/multirotor_geometry_control/rotors_simulator/rotors_gazebo_plugins/include;/usr/include/eigen3;/usr/include;/usr/include/opencv " STREQUAL " ")
+if(NOT "/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo_plugins/include;/usr/include/eigen3;/usr/include;/usr/include/opencv " STREQUAL " ")
   set(rotors_gazebo_plugins_INCLUDE_DIRS "")
-  set(_include_dirs "/home/andrew/NCRL/AprilTag_Localization/src/final_project/multirotor_geometry_control/rotors_simulator/rotors_gazebo_plugins/include;/usr/include/eigen3;/usr/include;/usr/include/opencv")
+  set(_include_dirs "/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo_plugins/include;/usr/include/eigen3;/usr/include;/usr/include/opencv")
   if(NOT "https://github.com/ethz-asl/rotors_simulator/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ethz-asl/rotors_simulator/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "https://github.com/ethz-asl/rotors_simulator " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/andrew/NCRL/AprilTag_Localization/src/final_project/multirotor_geo
         message(FATAL_ERROR "Project 'rotors_gazebo_plugins' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'rotors_gazebo_plugins' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/andrew/NCRL/AprilTag_Localization/src/final_project/multirotor_geometry_control/rotors_simulator/rotors_gazebo_plugins/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'rotors_gazebo_plugins' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo_plugins/${idir}'.  ${_report}")
     endif()
     _list_append_unique(rotors_gazebo_plugins_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/andrew/NCRL/AprilTag_Localization/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/andrew/NCRL/AprilTag_Localization/devel/lib;/home/andrew/NCRL/AprilTag_Localization/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

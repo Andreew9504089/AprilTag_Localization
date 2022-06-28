@@ -6,7 +6,7 @@ from os import path as os_path
 from pkgutil import extend_path
 from sys import path as sys_path
 
-__extended_path = '/home/andrew/NCRL/AprilTag_Localization/src/final_project/multirotor_geometry_control/rotors_simulator/rotors_evaluation/src'.split(';')
+__extended_path = '/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_evaluation/src'.split(';')
 for p in reversed(__extended_path):
     sys_path.insert(0, p)
     del p
