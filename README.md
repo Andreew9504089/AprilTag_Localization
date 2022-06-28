@@ -7,6 +7,13 @@ $ git clone https://github.com/Andreew9504089/AprilTag_Localization.git
 $ cd ~/yourwsname
 $ catkin_make
 ```
+
+## Run
+```console
+$ cd [pathToWorkspace]
+$ source devel/setup.bash
+$ roslaunch rotors_gazebo iris_one.launch
+```
 ## Group Members
 
 ## To-Do
