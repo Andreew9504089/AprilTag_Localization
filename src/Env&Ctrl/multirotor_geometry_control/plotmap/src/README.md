@@ -1,1 +1,0 @@
-## Plot for map scene.
