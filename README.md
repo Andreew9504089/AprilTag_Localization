@@ -9,7 +9,7 @@ $ catkin_make
 ```
 ## Group Members and Work Distribution
 
-## Progress
+## To-Do
 :heavy_check_mark: Mount 2 D435 cameras <br>
 <img src="https://github.com/Andreew9504089/AprilTag_Localization/blob/master/firefly1wD435.PNG" width="250" height="200" />
 
