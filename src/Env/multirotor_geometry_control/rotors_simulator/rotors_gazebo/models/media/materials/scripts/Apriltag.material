@@ -1,0 +1,34 @@
+material Apriltag/id0
+{
+  technique
+  {
+    pass
+    {
+      lighting off
+      texture_unit
+      {
+        texture tag3611_id0.png
+        filtering none none none
+        scale 1.0 1.0
+      }
+    }
+  }
+}
+material Apriltag/id1
+{
+  technique
+  {
+    pass
+    {
+      lighting off
+      texture_unit
+      {
+        texture tag3611_id1.png
+        filtering none none none
+        scale 1.0 1.0
+      }
+    }
+  }
+}
+
+
