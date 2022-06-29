@@ -12,6 +12,7 @@ $ catkin_make
 ```console
 $ cd [pathToWorkspace]
 $ source devel/setup.bash
+$ export GAZEBO_MODEL_PATH=[path to Apriltag_Localization]/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/models:$GAZEBO_MODEL_PATH
 $ roslaunch rotors_gazebo iris_one.launch
 ```
 ## Group Members
