@@ -9,6 +9,8 @@
 
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="$(find rotors_gazebo)/worlds/$(arg world_name).world"/>
+        <!--<arg name="world_name" value="$(find rotors_gazebo)/worlds/drone_inv.world"/>-->
+        <!--<arg name="world_name" value="$(find rotors_gazebo)/worlds/obstacle_world.world"/>-->
         <!-- <arg name="debug" value="true"/> -->
         <arg name="paused" value="false"/>
         <!-- <arg name="gui" value="false"/> -->
@@ -24,7 +26,6 @@
             <arg name="log_file" value="$(arg mav_name)1"/>
             <arg name="y" value="0"/>
             <arg name="x" value="0"/>
-	    <arg name="z" value="0.1"/>
         </include>
     </group>
 

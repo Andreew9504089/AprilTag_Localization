@@ -1,8 +1,0 @@
-prefix=/home/andrew/NCRL/AprilTag_Localization/install
-
-Name: rqt_rotors
-Description: Description of rqt_rotors
-Version: 2.2.3
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: mavros_msgs rospy rqt_gui rqt_gui_py
