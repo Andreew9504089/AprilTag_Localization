@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PATH="/home/andrew/NCRL/AprilTag_Localization/devel/bin:$PATH"
-export PKG_CONFIG_PATH="/home/andrew/NCRL/AprilTag_Localization/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/andrew/NCRL/AprilTag_Localization/build'
-export PYTHONPATH="/home/andrew/NCRL/AprilTag_Localization/devel/lib/python2.7/dist-packages:$PYTHONPATH"

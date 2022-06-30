@@ -22,12 +22,12 @@
   </xacro:if>
  
   <!-- Mount a forward facing D435 camera -->
-  <xacro:sensor_d435 parent="${namespace}/base_link" name="camera_forward" topics_ns="camera_forward">
+  <xacro:sensor_d435 parent="${namespace}/base_link" name="${namespace}/camera_forward" topics_ns="${namespace}/camera_forward">
 	<origin xyz="0.1 0 0" rpy="0 0 0"/>
   </xacro:sensor_d435>
 
   <!-- Mount a downward facing D435 camera -->
-  <xacro:sensor_d435 parent="${namespace}/base_link" name="camera_downward" topics_ns="camera_downward">
+  <xacro:sensor_d435 parent="${namespace}/base_link" name="${namespace}/camera_downward" topics_ns="${namespace}/camera_downward">
 	<origin xyz="0 0 -0.05" rpy="0 1.57 0"/>
   </xacro:sensor_d435>
 

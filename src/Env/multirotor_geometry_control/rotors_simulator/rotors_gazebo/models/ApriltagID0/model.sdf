@@ -1,6 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
   <model name='ApriltagID0'>
+    <static>true</static>
     <link name='link_1'>
       <inertial>
         <mass>0.1</mass>

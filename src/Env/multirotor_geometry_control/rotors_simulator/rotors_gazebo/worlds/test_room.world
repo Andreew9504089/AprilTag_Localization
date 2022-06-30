@@ -3,12 +3,12 @@
 
 <include>
   <uri>model://ApriltagID0 </uri>
-  <pose>1 1 0.15 0 0 0</pose>
+  <pose>0 0 0.05 0 1.57 0</pose>
 </include>
 
 <include>
   <uri>model://ApriltagID1 </uri>
-  <pose>1 -1 0.15 0 0 0</pose>
+  <pose>3.4 0 2 0 -0 0</pose>
 </include>
 
     <light name='sun' type='directional'>
@@ -281,7 +281,7 @@
       <static>1</static>
     </model>
     <model name='unit_box'>
-      <pose frame=''>3.92167 0.058125 0.5 0 -0 0</pose>
+      <pose frame=''>4 0 0.5 0 0 0</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>

@@ -7,6 +7,22 @@
 #IncludeRegexTransform: 
 
 /home/andrew/NCRL/AprilTag_Localization/devel/include/mav_msgs/Actuators.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
 
 /home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/offb/include/blas_redefines.h
 
