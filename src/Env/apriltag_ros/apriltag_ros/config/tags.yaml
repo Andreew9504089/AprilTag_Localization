@@ -21,7 +21,8 @@
 #   ]
 standalone_tags:
   [
-    {id: 0, size: 1.0, name: "husky_apriltag"}
+    {id: 0, size: 0.3, name: "tag0"},
+    {id: 1, size: 0.3, name: "tag1"}
   ]
 # ## Tag bundle definitions
 # ### Remarks
@@ -44,13 +45,13 @@ standalone_tags:
 #     },
 #     ...
 #   ]
-tag_bundles:
-  [
-     {
-       name: 'husky_apriltag',
-       layout:
-         [
-           {id: 0, size: 1.0, x: 0, y: 0, z: 0, qw: 1.0, qx: 0.0, qy: .0, qz: 0.0},
-         ]
-     }
-  ]
+#tag_bundles:
+#  [
+#     {
+#       name: 'husky_apriltag',
+#       layout:
+#         [
+#           {id: 0, size: 1.0, x: 0, y: 0, z: 0, qw: 1.0, qx: 0.0, qy: .0, qz: 0.0},
+#         ]
+#     }
+#  ]
