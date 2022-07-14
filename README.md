@@ -24,7 +24,22 @@ $ roslaunch rotors_gazebo iris_one.launch
 :heavy_check_mark: Add 2 AprilTags in Gazebo <br>
 <img src="https://github.com/Andreew9504089/AprilTag_Localization/blob/master/Screenshot%20from%202022-06-30%2009-54-42.png" width="300" height="250" />
 
-- [ ] Tuning error of camera and Apriltags
+:heavy_check_mark: Error of camera and Apriltags
+* Using RGB image
+    * Downward Error Table
+    
+        Error = (uav GT z position - 0.05) - (/tag_detections z position + 0.01)
+        | Height | 0.8m  | 1.4m  | 2m  |  3m  |
+        | ------ | ----- | ----- | --- | ---  |
+        | Error  | 0.046m | 0.046m |   0.042m  |   0.017m   |
+
+    * Forward Error Table
+
+        Error = tag GT x position - (uav GT x position + 0.1 + /tag_detection z position)
+        | Height | 0.8m   | 1.4m   | 2m     | 3m    |
+        | ------ | ------ | ------ | ------ | --- |
+        | Error  | 0.008m | 0.005m | 0.007m | 0.001m |
+
 
 ## Tutorials
 ### How to add Apriltags in Gazebo
