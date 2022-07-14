@@ -3,12 +3,85 @@
 
 <include>
   <uri>model://ApriltagID0 </uri>
-  <pose>0 0 0.05 0 1.57 0</pose>
+  <pose>-6.85 0 0.05 0 1.57 0</pose>
+</include>
+
+<include>
+  <uri>model://ApriltagID2 </uri>
+  <pose>-7.15 0.3 0.05 0 1.57 0</pose>
+</include>
+
+<include>
+  <uri>model://ApriltagID4 </uri>
+  <pose>-7.15 -0.3 0.05 0 1.57 0</pose>
+</include>
+
+<include>
+  <uri>model://ApriltagID6 </uri>
+  <pose>-6 0 0.05 0 1.57 0</pose>
+</include>
+<include>
+  <uri>model://ApriltagID7 </uri>
+  <pose>-5 0 0.05 0 1.57 0</pose>
+</include>
+<include>
+  <uri>model://ApriltagID8 </uri>
+  <pose>-4 0 0.05 0 1.57 0</pose>
+</include>
+<include>
+  <uri>model://ApriltagID9 </uri>
+  <pose>-3 0 0.05 0 1.57 0</pose>
+</include>
+<include>
+  <uri>model://ApriltagID10 </uri>
+  <pose>-2 0 0.05 0 1.57 0</pose>
+</include>
+<include>
+  <uri>model://ApriltagID11 </uri>
+  <pose>-1 0 0.05 0 1.57 0</pose>
+</include>
+<include>
+  <uri>model://ApriltagID12 </uri>
+  <pose>-0 0 0.05 0 1.57 0</pose>
+</include>
+<include>
+  <uri>model://ApriltagID13 </uri>
+  <pose>1 0 0.05 0 1.57 0</pose>
+</include>
+<include>
+  <uri>model://ApriltagID14 </uri>
+  <pose>2 0 0.05 0 1.57 0</pose>
+</include>
+<include>
+  <uri>model://ApriltagID15 </uri>
+  <pose>3 0 0.05 0 1.57 0</pose>
+</include>
+<include>
+  <uri>model://ApriltagID16 </uri>
+  <pose>4 0 0.05 0 1.57 0</pose>
+</include>
+<include>
+  <uri>model://ApriltagID17 </uri>
+  <pose>5 0 0.05 0 1.57 0</pose>
+</include>
+<include>
+  <uri>model://ApriltagID18 </uri>
+  <pose>6 0 0.05 0 1.57 0</pose>
 </include>
 
 <include>
   <uri>model://ApriltagID1 </uri>
-  <pose>3 0 2 0 -0 0</pose>
+  <pose>7 0 2.3 0 -0 0</pose>
+</include>
+
+<include>
+  <uri>model://ApriltagID3 </uri>
+  <pose>7 0.3 1.7 0 -0 0</pose>
+</include>
+
+<include>
+  <uri>model://ApriltagID5 </uri>
+  <pose>7 -0.3 1.7 0 -0 0</pose>
 </include>
 
     <!-- Only one ROS interface plugin is required per world, as any other plugin can connect a Gazebo
@@ -407,10 +480,10 @@
         </link>
       </model>
       <model name='unit_box'>
-        <pose frame=''>3.5 0 1.2 0 0 0 </pose>
+        <pose frame=''>7.5 0 1.2 0 0 0 </pose>
         <scale>1 1 2.48231</scale>
         <link name='link'>
-          <pose frame=''>3.5 0 1.2 0 0 0</pose>
+          <pose frame=''>7.5 0 1.2 0 0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>2.02262 2.00122 -4.31014 -1.54687 1.42687 0.049772</acceleration>
           <wrench>2.02262 2.00122 -4.31014 0 -0 0</wrench>
