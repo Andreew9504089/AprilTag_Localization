@@ -132,7 +132,8 @@ CATKIN_WHITELIST_PACKAGES:STRING=
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//Choose the build type
+//Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
+// CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
 CMAKE_BUILD_TYPE:STRING=Release
 
 //Enable/Disable color output during build.
@@ -1711,7 +1712,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=32
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
