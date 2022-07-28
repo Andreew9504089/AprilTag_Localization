@@ -1,0 +1,8 @@
+prefix=/home/andrew/NCRL/AprilTag_Localization/devel
+
+Name: yaml_service
+Description: Description of yaml_service
+Version: 0.0.0
+Cflags: -I/home/andrew/NCRL/AprilTag_Localization/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libqpsolver.so -o ../../../devel/lib/libqpsolver.so CMakeFiles/qpsolver.dir/include/qptrajectory.cpp.o CMakeFiles/qpsolver.dir/qpsolver_autogen/mocs_compilation.cpp.o -lpython2.7 

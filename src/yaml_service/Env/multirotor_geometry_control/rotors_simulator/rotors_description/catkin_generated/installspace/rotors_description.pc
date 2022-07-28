@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: rotors_description
+Description: Description of rotors_description
+Version: 2.2.3
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

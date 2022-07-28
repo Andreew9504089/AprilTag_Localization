@@ -1,0 +1,8 @@
+prefix=/home/andrew/NCRL/AprilTag_Localization/src/yaml_service/devel
+
+Name: husky_msgs
+Description: Description of husky_msgs
+Version: 0.6.2
+Cflags: -I/home/andrew/NCRL/AprilTag_Localization/src/yaml_service/devel/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs message_runtime

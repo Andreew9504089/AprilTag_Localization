@@ -1383,8 +1383,17 @@ uuid_msgs_DIR:PATH=/opt/ros/melodic/share/uuid_msgs/cmake
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
 
+//The directory containing a CMake configuration file for yaml-cpp.
+yaml-cpp_DIR:PATH=/usr/local/share/cmake/yaml-cpp
+
 //The directory containing a CMake configuration file for yaml_cpp_catkin.
 yaml_cpp_catkin_DIR:PATH=yaml_cpp_catkin_DIR-NOTFOUND
+
+//Value Computed by CMake
+yaml_service_BINARY_DIR:STATIC=/home/andrew/NCRL/AprilTag_Localization/build/yaml_service
+
+//Value Computed by CMake
+yaml_service_SOURCE_DIR:STATIC=/home/andrew/NCRL/AprilTag_Localization/src/yaml_service
 
 
 ########################
@@ -1712,7 +1721,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=32
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -23,6 +23,7 @@ b823c603fa93b8851f0ba159acc5eedd /home/andrew/NCRL/AprilTag_Localization/devel/i
 596e2d2ca8ba88c7faaea3377e0c7e4a /home/andrew/NCRL/AprilTag_Localization/devel/include/rotors_comm/Octomap.h
 ee44987c9d3177b658bd3fad057c983e /home/andrew/NCRL/AprilTag_Localization/devel/include/rotors_comm/RecordRosbag.h
 f1b7ed4aaf8b1d0b923870baa2abf5b3 /home/andrew/NCRL/AprilTag_Localization/devel/include/rotors_comm/WindSpeed.h
+78c339b762b77e05b9b214c51c1962a9 /home/andrew/NCRL/AprilTag_Localization/devel/include/yaml_service/readTagPos.h
 6add0849ca7c564d069ceebc1f4948b6 /home/andrew/NCRL/AprilTag_Localization/devel/lib/python2.7/dist-packages/apriltag_ros/msg/_AprilTagDetection.py
 1aa4ce0f579ca6e8770a3fb14baa5ef0 /home/andrew/NCRL/AprilTag_Localization/devel/lib/python2.7/dist-packages/apriltag_ros/msg/_AprilTagDetectionArray.py
 125791fa01f1bc7c667b3450ecda6e1a /home/andrew/NCRL/AprilTag_Localization/devel/lib/python2.7/dist-packages/apriltag_ros/msg/__init__.py
@@ -55,6 +56,8 @@ fd332667896a31a4997ae945c8421798 /home/andrew/NCRL/AprilTag_Localization/devel/l
 28f553bc04a8607eead3ad3e6dfb30ea /home/andrew/NCRL/AprilTag_Localization/devel/lib/python2.7/dist-packages/rotors_comm/srv/_Octomap.py
 beeb975b29e3f3ea422b447db3944334 /home/andrew/NCRL/AprilTag_Localization/devel/lib/python2.7/dist-packages/rotors_comm/srv/_RecordRosbag.py
 47ee167cda74ec0f3b419f7679927a8c /home/andrew/NCRL/AprilTag_Localization/devel/lib/python2.7/dist-packages/rotors_comm/srv/__init__.py
+2078b8c34b578034eb5016d035d358b3 /home/andrew/NCRL/AprilTag_Localization/devel/lib/python2.7/dist-packages/yaml_service/srv/__init__.py
+c4c183b8a5b66b9522f3b743219d2a5b /home/andrew/NCRL/AprilTag_Localization/devel/lib/python2.7/dist-packages/yaml_service/srv/_readTagPos.py
 13741b8a9730e18bade071b16b78ee85 /home/andrew/NCRL/AprilTag_Localization/devel/share/common-lisp/ros/apriltag_ros/msg/AprilTagDetection.lisp
 b1940e02042246b3046f0368f98cd4d1 /home/andrew/NCRL/AprilTag_Localization/devel/share/common-lisp/ros/apriltag_ros/msg/AprilTagDetectionArray.lisp
 62d55ef83907f324755897be43d3f93f /home/andrew/NCRL/AprilTag_Localization/devel/share/common-lisp/ros/apriltag_ros/srv/AnalyzeSingleImage.lisp
@@ -79,6 +82,7 @@ efc7a1778501b6f985947384e2988a39 /home/andrew/NCRL/AprilTag_Localization/devel/s
 c71af2741a7f988f4257999d02ef66f2 /home/andrew/NCRL/AprilTag_Localization/devel/share/common-lisp/ros/rotors_comm/msg/WindSpeed.lisp
 a2541fb52500333c5dc61fa956347186 /home/andrew/NCRL/AprilTag_Localization/devel/share/common-lisp/ros/rotors_comm/srv/Octomap.lisp
 5e3741c859d6c50966975b9d1b0687d5 /home/andrew/NCRL/AprilTag_Localization/devel/share/common-lisp/ros/rotors_comm/srv/RecordRosbag.lisp
+552e2840f972f03c9171bddf770da2e4 /home/andrew/NCRL/AprilTag_Localization/devel/share/common-lisp/ros/yaml_service/srv/readTagPos.lisp
 344547171fbb68f4967741fb5c57e0b5 /home/andrew/NCRL/AprilTag_Localization/devel/share/gennodejs/ros/apriltag_ros/msg/AprilTagDetection.js
 61daa21f7f0076c79f396ce3cf9219c3 /home/andrew/NCRL/AprilTag_Localization/devel/share/gennodejs/ros/apriltag_ros/msg/AprilTagDetectionArray.js
 b573e0489ab626026bf98fcf86d649e0 /home/andrew/NCRL/AprilTag_Localization/devel/share/gennodejs/ros/apriltag_ros/srv/AnalyzeSingleImage.js
@@ -103,6 +107,7 @@ b8bf1d9bef1220be036cf5be99ec69cc /home/andrew/NCRL/AprilTag_Localization/devel/s
 cfe1f5f95277c76af0a7655be7cfd9df /home/andrew/NCRL/AprilTag_Localization/devel/share/gennodejs/ros/rotors_comm/msg/WindSpeed.js
 5a3787f556363b829688c308e7a15ccc /home/andrew/NCRL/AprilTag_Localization/devel/share/gennodejs/ros/rotors_comm/srv/Octomap.js
 e2a524c213fa1f2c92b48c958274831b /home/andrew/NCRL/AprilTag_Localization/devel/share/gennodejs/ros/rotors_comm/srv/RecordRosbag.js
+23e24f0642065b6370db7781cc5f205c /home/andrew/NCRL/AprilTag_Localization/devel/share/gennodejs/ros/yaml_service/srv/readTagPos.js
 53f19e7c4137f40529a25a5fc8729282 /home/andrew/NCRL/AprilTag_Localization/devel/share/roseus/ros/apriltag_ros/manifest.l
 2fa1d05443d8389386aa51531dc5e889 /home/andrew/NCRL/AprilTag_Localization/devel/share/roseus/ros/apriltag_ros/msg/AprilTagDetection.l
 8f45807b728e5104f30ba52e47661898 /home/andrew/NCRL/AprilTag_Localization/devel/share/roseus/ros/apriltag_ros/msg/AprilTagDetectionArray.l
@@ -132,6 +137,8 @@ c00153c5cae38464363f312a371a16e6 /home/andrew/NCRL/AprilTag_Localization/devel/s
 742dcbb5e664885bcf037bdb5977a9af /home/andrew/NCRL/AprilTag_Localization/devel/share/roseus/ros/rotors_comm/msg/WindSpeed.l
 44dc12524511acbb061d73874c683838 /home/andrew/NCRL/AprilTag_Localization/devel/share/roseus/ros/rotors_comm/srv/Octomap.l
 0fae34dd747d49543567e65c2bce0d0f /home/andrew/NCRL/AprilTag_Localization/devel/share/roseus/ros/rotors_comm/srv/RecordRosbag.l
+d91ef282815479e6521653456eb68edb /home/andrew/NCRL/AprilTag_Localization/devel/share/roseus/ros/yaml_service/manifest.l
+12301a3f37f0f79c06a8b68d2c13aa7d /home/andrew/NCRL/AprilTag_Localization/devel/share/roseus/ros/yaml_service/srv/readTagPos.l
 ed2f43829475f912113da70029740199 /home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/models/iris/iris.sdf
 73736237c09ac3ca092ce0492e10e0ce CMakeFiles/clean_test_results
 488b470faa6d022b92dec601bb0ea26a Env/apriltag_ros/apriltag_ros/CMakeFiles/_apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: offb
+Description: Description of offb
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

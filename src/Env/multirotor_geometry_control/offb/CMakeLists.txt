@@ -18,6 +18,7 @@ find_package(catkin REQUIRED COMPONENTS
   #UKF
 )
 find_package(gazebo REQUIRED)
+find_package(yaml-cpp REQUIRED)
 find_package(ompl)
 find_package(
     PythonLibs
@@ -201,6 +202,8 @@ add_library(
 #add_executable(thrust src/thrust.cpp)
 #add_executable(apply_wrench src/apply_wrench.cpp)
 add_executable(geo src/geo.cpp)
+add_executable(manual_waypoints src/manual_waypoints.cpp)
+add_executable(read_yaml src/read_yaml.cpp)
 add_executable(mocap src/mocap.cpp)
 add_executable(geo_plan src/geo_plan.cpp)
 add_executable(geo2 src/geo2.cpp)
@@ -249,14 +252,15 @@ add_executable(kf_tracker_node src/kf_tracker_node.cpp)
 #    rls
 #   )
 target_link_libraries(
+    read_yaml yaml-cpp
+)
+target_link_libraries(
     rls
      ${catkin_LIBRARIES}
-
 )
 target_link_libraries(
     mocap
      ${catkin_LIBRARIES}
-
 )
 #target_link_libraries(
 #    coop1
@@ -276,6 +280,13 @@ target_link_libraries(
 )
 target_link_libraries(
     geo
+     ${catkin_LIBRARIES}
+     ${PYTHON_LIBRARIES}
+     qptrajectory
+     geometric_controller
+)
+target_link_libraries(
+    manual_waypoints
      ${catkin_LIBRARIES}
      ${PYTHON_LIBRARIES}
      qptrajectory

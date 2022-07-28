@@ -1,0 +1,8 @@
+prefix=/home/andrew/NCRL/AprilTag_Localization/src/yaml_service/devel
+
+Name: rotors_hil_interface
+Description: Description of rotors_hil_interface
+Version: 2.2.3
+Cflags: -I/home/andrew/NCRL/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_hil_interface/include
+Libs: -L${prefix}/lib -lrotors_hil_interface
+Requires: geometry_msgs mav_msgs mavros mavros_msgs roscpp sensor_msgs
