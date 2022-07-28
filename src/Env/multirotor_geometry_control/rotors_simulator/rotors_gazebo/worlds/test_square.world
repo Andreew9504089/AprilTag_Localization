@@ -3,12 +3,12 @@
 
 <include>
   <uri>model://ApriltagID0 </uri>
-  <pose>7 -6 0.05 0 1.57 0</pose>
+  <pose>0.5 -6 0.05 0 1.57 0</pose>
 </include>
 
 <include>
   <uri>model://ApriltagID2 </uri>
-  <pose>7 6 0.05 0 1.57 0</pose>
+  <pose>0.5 -0.5 0.05 0 1.57 0</pose>
 </include>
 
 <include>
@@ -17,169 +17,172 @@
 </include>
 <include>
   <uri>model://ApriltagID7 </uri>
-  <pose>-5 -6 0.05 0 1.57 0</pose>
+  <pose>-5.5 -6 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID8 </uri>
-  <pose>-4 -6 0.05 0 1.57 0</pose>
+  <pose>-5 -6 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID9 </uri>
-  <pose>-3 -6 0.05 0 1.57 0</pose>
+  <pose>-4.5 -6 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID10 </uri>
-  <pose>-2 -6 0.05 0 1.57 0</pose>
+  <pose>-4 -6 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID11 </uri>
-  <pose>-1 -6 0.05 0 1.57 0</pose>
+  <pose>-3.5 -6 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID12 </uri>
-  <pose>-0 -6 0.05 0 1.57 0</pose>
+  <pose>-3 -6 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID13 </uri>
-  <pose>1 -6 0.05 0 1.57 0</pose>
+  <pose>-2.5 -6 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID14 </uri>
-  <pose>2 -6 0.05 0 1.57 0</pose>
+  <pose>-2 -6 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID15 </uri>
-  <pose>3 -6 0.05 0 1.57 0</pose>
+  <pose>-1.5 -6 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID16 </uri>
-  <pose>4 -6 0.05 0 1.57 0</pose>
+  <pose>-1 -6 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID17 </uri>
-  <pose>5 -6 0.05 0 1.57 0</pose>
+  <pose>-0.5 -6 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID18 </uri>
-  <pose>6 -6 0.05 0 1.57 0</pose>
+  <pose>0 -6 0.05 0 1.57 0</pose>
 </include>
 
 <include>
   <uri>model://ApriltagID19 </uri>
-  <pose>7 -5 0.05 0 1.57 0</pose>
+  <pose>1 -5.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID20 </uri>
-  <pose>7 -4 0.05 0 1.57 0</pose>
+  <pose>1 -5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID21 </uri>
-  <pose>7 -3 0.05 0 1.57 0</pose>
+  <pose>1 -4.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID22 </uri>
-  <pose>7 -2 0.05 0 1.57 0</pose>
+  <pose>1 -4 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID23 </uri>
-  <pose>7 -1 0.05 0 1.57 0</pose>
+  <pose>1 -3.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID24 </uri>
-  <pose>7 0 0.05 0 1.57 0</pose>
+  <pose>1 -3 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID25 </uri>
-  <pose>7 1 0.05 0 1.57 0</pose>
+  <pose>1 -2.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID26 </uri>
-  <pose>7 2 0.05 0 1.57 0</pose>
+  <pose>1 -2 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID27 </uri>
-  <pose>7 3 0.05 0 1.57 0</pose>
+  <pose>1 -1.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID28 </uri>
-  <pose>7 4 0.05 0 1.57 0</pose>
+  <pose>1 -1 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID29 </uri>
-  <pose>7 5 0.05 0 1.57 0</pose>
+  <pose>1 -0.5 0.05 0 1.57 0</pose>
 </include>
 
 <include>
   <uri>model://ApriltagID30 </uri>
-  <pose>-6 6 0.05 0 1.57 0</pose>
+  <pose>-6 -0.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID31 </uri>
-  <pose>-5 6 0.05 0 1.57 0</pose>
+  <pose>-5.5 -0.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID32 </uri>
-  <pose>-4 6 0.05 0 1.57 0</pose>
+  <pose>-5 -0.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID33 </uri>
-  <pose>-3 6 0.05 0 1.57 0</pose>
+  <pose>-4.5 -0.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID34 </uri>
-  <pose>-2 6 0.05 0 1.57 0</pose>
+  <pose>-4 -0.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID35 </uri>
-  <pose>-1 6 0.05 0 1.57 0</pose>
+  <pose>-3.5 -0.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID36 </uri>
-  <pose>0 6 0.05 0 1.57 0</pose>
+  <pose>-3 -0.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID37 </uri>
-  <pose>1 6 0.05 0 1.57 0</pose>
+  <pose>-2.5 -0.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID38 </uri>
-  <pose>2 6 0.05 0 1.57 0</pose>
+  <pose>-2 -0.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID39 </uri>
-  <pose>3 6 0.05 0 1.57 0</pose>
+  <pose>-1.5 -0.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID40 </uri>
-  <pose>4 6 0.05 0 1.57 0</pose>
+  <pose>-1 -0.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID41 </uri>
-  <pose>5 6 0.05 0 1.57 0</pose>
+  <pose>-0.5 -0.5 0.05 0 1.57 0</pose>
 </include>
 <include>
   <uri>model://ApriltagID42 </uri>
-  <pose>6 6 0.05 0 1.57 0</pose>
+  <pose>0 -0.5 0.05 0 1.57 0</pose>
 </include>
-
+<include>
+  <uri>model://ApriltagID43 </uri>
+  <pose>1 -6 0.05 0 1.57 0</pose>
+</include>
 <include>
   <uri>model://ApriltagID1 </uri>
-  <pose>8 6 2 0 -0 0</pose>
+  <pose>1 -0.5 2 0 -0 0</pose>
 </include>
 
 <include>
   <uri>model://ApriltagID3 </uri>
-  <pose>8 -6 2 0 -0 0</pose>
+  <pose>1 -6 2 0 -0 0</pose>
 </include>
 
 <include>
   <uri>model://ApriltagID5 </uri>
-  <pose>7 -6.5 2 0 -0 1.57</pose>
+  <pose>0.5 -6.5 2 0 -0 1.57</pose>
 </include>
 
 <include>
   <uri>model://ApriltagID4 </uri>
-  <pose>7 6.5 2 0 0 1.57</pose>
+  <pose>0.5 0 2 0 0 1.57</pose>
 </include>
 
     <!-- Only one ROS interface plugin is required per world, as any other plugin can connect a Gazebo
