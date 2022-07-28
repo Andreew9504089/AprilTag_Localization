@@ -1,6 +1,6 @@
 <!-- for trajectory tracking -->
 <launch>
-    <arg name="world_name" default="test_hallway"/>
+    <arg name="world_name" default="test_square"/>
     <arg name="enable_logging" default="false"/>
     <arg name="enable_ground_truth" default="true"/>
     <arg name="mav_name" default="iris" />
@@ -24,8 +24,8 @@
             <arg name="enable_logging" value="$(arg enable_logging)" />
             <arg name="enable_ground_truth" value="$(arg enable_ground_truth)" />
             <arg name="log_file" value="$(arg mav_name)1"/>
-            <arg name="y" value="0"/>
-            <arg name="x" value="-7"/>
+            <arg name="y" value="6"/>
+            <arg name="x" value="-6"/>
         </include>
     </group>
 
