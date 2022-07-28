@@ -167,12 +167,12 @@
 </include>
 <include>
   <uri>model://ApriltagID1 </uri>
-  <pose>1 -0.5 2 0 -0 0</pose>
+  <pose>2 -0.5 2 0 -0 0</pose>
 </include>
 
 <include>
   <uri>model://ApriltagID3 </uri>
-  <pose>1 -6 2 0 -0 0</pose>
+  <pose>2 -6 2 0 -0 0</pose>
 </include>
 
 <include>
