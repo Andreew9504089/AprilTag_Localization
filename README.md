@@ -12,8 +12,20 @@ $ catkin_make
 ```console
 $ cd [pathToWorkspace]
 $ source devel/setup.bash
+
+====For Gazebo Simulation====
 $ export GAZEBO_MODEL_PATH=[path to Apriltag_Localization]/AprilTag_Localization/src/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/models:$GAZEBO_MODEL_PATH
 $ roslaunch rotors_gazebo iris_one.launch
+$ roslaunch rotors_gazebo controller_geometry_iris.launch
+
+====For Localization====
+$ roslaunch apriltag_ros continuous_detection.launch
+$ rosrun yaml_service read_tag_pos.py
+$ rosrun rotors_gazebo imu_coord_enu
+$ rosrun rotors_gazebo Error_C_OOP_ver2
+$ rosrun imu_filter_madgwick imu_filter_node _use_mag:=false _publish_tf:=false _world_frame:="enu" /imu/data_raw:=/iris1/imu/enu
+$ roslaunch rotors_gazebo apriltag_localization_sensor_fusion.launch
+
 ```
 ## Group Members
 
