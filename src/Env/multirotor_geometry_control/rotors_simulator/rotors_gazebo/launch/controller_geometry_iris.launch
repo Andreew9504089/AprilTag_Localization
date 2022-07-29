@@ -12,7 +12,7 @@
         <node name="waypoint_publisher" pkg="rotors_gazebo" type="waypoint_publisher" output="screen" args="-6 -6 2 0"/>
         <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
         <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
-	<node pkg="offb" type="manual_waypoints" name="manual_waypoints" output="screen"/>
+	<!--<node pkg="offb" type="manual_waypoints" name="manual_waypoints" output="screen"/>-->
     </group>
 
 

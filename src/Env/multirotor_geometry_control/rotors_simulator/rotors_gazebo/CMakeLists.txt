@@ -64,6 +64,11 @@ add_executable(waypoint_publisher_file src/waypoint_publisher_file.cpp)
 target_link_libraries(waypoint_publisher_file ${catkin_LIBRARIES})
 add_dependencies(waypoint_publisher_file ${catkin_EXPORTED_TARGETS})
 
+add_executable(Error_C_OOP_ver2 src/Error_C_OOP_ver2.cpp)
+target_link_libraries(Error_C_OOP_ver2 ${catkin_LIBRARIES})
+
+add_executable(imu_coord_enu src/imu_coord_enu.cpp)
+target_link_libraries(imu_coord_enu ${catkin_LIBRARIES})
 
 #add_executable(apply_wrench src/apply_wrench.cpp)
 #target_link_libraries(apply_wrench ${catkin_LIBRARIES})

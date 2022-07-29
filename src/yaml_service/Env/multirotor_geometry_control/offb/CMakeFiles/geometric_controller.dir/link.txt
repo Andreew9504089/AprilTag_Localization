@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -std=c++11 -O3 -DNDEBUG  -shared -Wl,-soname,libgeometric_controller.so -o ../../../devel/lib/libgeometric_controller.so CMakeFiles/geometric_controller.dir/include/geometric_controller.cpp.o  -L/usr/lib/x86_64-linux-gnu/gazebo-9/plugins 

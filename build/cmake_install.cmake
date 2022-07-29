@@ -159,6 +159,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/andrew/NCRL/AprilTag_Localization/build/realsense_gazebo_plugin/cmake_install.cmake")
   include("/home/andrew/NCRL/AprilTag_Localization/build/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo_plugins/cmake_install.cmake")
   include("/home/andrew/NCRL/AprilTag_Localization/build/Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/cmake_install.cmake")
+  include("/home/andrew/NCRL/AprilTag_Localization/build/Env/yaml_service/cmake_install.cmake")
 
 endif()
 

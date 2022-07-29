@@ -101,17 +101,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -134,6 +123,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -198,6 +198,36 @@ sdf/fast:
 .PHONY : sdf/fast
 
 # Convenience name for target.
+Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/Error_C_OOP_ver2.dir/rule:
+	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f CMakeFiles/Makefile2 Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/Error_C_OOP_ver2.dir/rule
+.PHONY : Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/Error_C_OOP_ver2.dir/rule
+
+# Convenience name for target.
+Error_C_OOP_ver2: Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/Error_C_OOP_ver2.dir/rule
+
+.PHONY : Error_C_OOP_ver2
+
+# fast build rule for target.
+Error_C_OOP_ver2/fast:
+	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/Error_C_OOP_ver2.dir/build.make Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/Error_C_OOP_ver2.dir/build
+.PHONY : Error_C_OOP_ver2/fast
+
+# Convenience name for target.
+Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/imu_coord_enu.dir/rule:
+	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f CMakeFiles/Makefile2 Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/imu_coord_enu.dir/rule
+.PHONY : Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/imu_coord_enu.dir/rule
+
+# Convenience name for target.
+imu_coord_enu: Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/imu_coord_enu.dir/rule
+
+.PHONY : imu_coord_enu
+
+# fast build rule for target.
+imu_coord_enu/fast:
+	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/imu_coord_enu.dir/build.make Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/imu_coord_enu.dir/build
+.PHONY : imu_coord_enu/fast
+
+# Convenience name for target.
 Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/waypoint_publisher_file.dir/rule:
 	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f CMakeFiles/Makefile2 Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/waypoint_publisher_file.dir/rule
 .PHONY : Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/waypoint_publisher_file.dir/rule
@@ -227,6 +257,33 @@ hovering_example/fast:
 	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/hovering_example.dir/build.make Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/hovering_example.dir/build
 .PHONY : hovering_example/fast
 
+src/Error_C_OOP_ver2.o: src/Error_C_OOP_ver2.cpp.o
+
+.PHONY : src/Error_C_OOP_ver2.o
+
+# target to build an object file
+src/Error_C_OOP_ver2.cpp.o:
+	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/Error_C_OOP_ver2.dir/build.make Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/Error_C_OOP_ver2.dir/src/Error_C_OOP_ver2.cpp.o
+.PHONY : src/Error_C_OOP_ver2.cpp.o
+
+src/Error_C_OOP_ver2.i: src/Error_C_OOP_ver2.cpp.i
+
+.PHONY : src/Error_C_OOP_ver2.i
+
+# target to preprocess a source file
+src/Error_C_OOP_ver2.cpp.i:
+	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/Error_C_OOP_ver2.dir/build.make Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/Error_C_OOP_ver2.dir/src/Error_C_OOP_ver2.cpp.i
+.PHONY : src/Error_C_OOP_ver2.cpp.i
+
+src/Error_C_OOP_ver2.s: src/Error_C_OOP_ver2.cpp.s
+
+.PHONY : src/Error_C_OOP_ver2.s
+
+# target to generate assembly for a file
+src/Error_C_OOP_ver2.cpp.s:
+	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/Error_C_OOP_ver2.dir/build.make Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/Error_C_OOP_ver2.dir/src/Error_C_OOP_ver2.cpp.s
+.PHONY : src/Error_C_OOP_ver2.cpp.s
+
 src/hovering_example.o: src/hovering_example.cpp.o
 
 .PHONY : src/hovering_example.o
@@ -253,6 +310,33 @@ src/hovering_example.s: src/hovering_example.cpp.s
 src/hovering_example.cpp.s:
 	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/hovering_example.dir/build.make Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/hovering_example.dir/src/hovering_example.cpp.s
 .PHONY : src/hovering_example.cpp.s
+
+src/imu_coord_enu.o: src/imu_coord_enu.cpp.o
+
+.PHONY : src/imu_coord_enu.o
+
+# target to build an object file
+src/imu_coord_enu.cpp.o:
+	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/imu_coord_enu.dir/build.make Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/imu_coord_enu.dir/src/imu_coord_enu.cpp.o
+.PHONY : src/imu_coord_enu.cpp.o
+
+src/imu_coord_enu.i: src/imu_coord_enu.cpp.i
+
+.PHONY : src/imu_coord_enu.i
+
+# target to preprocess a source file
+src/imu_coord_enu.cpp.i:
+	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/imu_coord_enu.dir/build.make Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/imu_coord_enu.dir/src/imu_coord_enu.cpp.i
+.PHONY : src/imu_coord_enu.cpp.i
+
+src/imu_coord_enu.s: src/imu_coord_enu.cpp.s
+
+.PHONY : src/imu_coord_enu.s
+
+# target to generate assembly for a file
+src/imu_coord_enu.cpp.s:
+	cd /home/andrew/NCRL/AprilTag_Localization/build && $(MAKE) -f Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/imu_coord_enu.dir/build.make Env/multirotor_geometry_control/rotors_simulator/rotors_gazebo/CMakeFiles/imu_coord_enu.dir/src/imu_coord_enu.cpp.s
+.PHONY : src/imu_coord_enu.cpp.s
 
 src/waypoint_publisher.o: src/waypoint_publisher.cpp.o
 
@@ -318,16 +402,24 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... waypoint_publisher"
-	@echo "... sdf"
-	@echo "... waypoint_publisher_file"
-	@echo "... hovering_example"
-	@echo "... edit_cache"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... waypoint_publisher"
+	@echo "... sdf"
+	@echo "... Error_C_OOP_ver2"
+	@echo "... imu_coord_enu"
+	@echo "... edit_cache"
+	@echo "... waypoint_publisher_file"
+	@echo "... hovering_example"
+	@echo "... src/Error_C_OOP_ver2.o"
+	@echo "... src/Error_C_OOP_ver2.i"
+	@echo "... src/Error_C_OOP_ver2.s"
 	@echo "... src/hovering_example.o"
 	@echo "... src/hovering_example.i"
 	@echo "... src/hovering_example.s"
+	@echo "... src/imu_coord_enu.o"
+	@echo "... src/imu_coord_enu.i"
+	@echo "... src/imu_coord_enu.s"
 	@echo "... src/waypoint_publisher.o"
 	@echo "... src/waypoint_publisher.i"
 	@echo "... src/waypoint_publisher.s"
