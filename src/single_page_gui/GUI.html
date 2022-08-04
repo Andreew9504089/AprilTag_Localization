@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Control Panel</title>
+        <script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/eventemitter2@5.0.1/lib/eventemitter2.min.js"></script>
+        <script type="text/javascript" src="https://static.robotwebtools.org/mjpegcanvasjs/current/mjpegcanvas.min.js"></script>
+
+    </head>
+
+    <body>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-white">
+            <a class="navbar-brand" href="#">NCRL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="http://127.0.0.1:5000/">Home<span class="sr-only">(current)</span></a>
+              </div>
+        </nav>
+      </div>
+      <div style="padding-top:55px; margin-bottom:20px; padding-bottom:35px;" class="jumbotron jumbotron-fluid bg-info text-white">
+          <h1 style="padding-bottom:20px;" class="text-center display-3"> NCRL Apriltag Localization </h1>
+          <p class="text-center display-8">This is a web control interface for NCRL Apriltag Localization Project.</p>
+      </div>
+      <div id="control_gui" class="container-fluid">
+        <div class="row" style="margin-left:1rem;">
+          <div class="col-2 jumbotron" style="padding-bottom:2rem; padding-top:1rem; padding-right:1rem; padding-left:1rem; margin-right:1rem;">
+            <h3>Connection status</h3>
+            <p class="text-muted" v-if="!connected && !failure">Not Connected</p>
+            <p class="text-danger" v-if="failure">Error</p>
+            <p class="text-success" v-if="connected">Connected</p>
+            <label for="uav_server">UAV_server: </label><br/>
+            <input id="uav_server" type="text" v-model="ws_address"/><br/>
+            <button class="btn btn-danger"  style="margin-top:10px; margin-bottom:10px;" @click="disconnect" v-if="connected">Disconnect</button>
+            <button class="btn btn-success" style="margin-top:10px; margin-bottom:10px;" @click="connect" v-if="!connected">Connect</button>
+          </div>
+
+          <div class="col-9 jumbotron" style="padding-bottom:2rem; padding-top:1rem; padding-left:1rem;">
+            <h3 style="margin-bottom:1rem;">Control Panel</h3>
+            <div class="row">
+              <div class="col-4">
+                <div class="row" style="margin-bottom:2rem;">
+                  <div class="col-6" style="margin-top:2rem;">
+                    <button type="button" class="btn btn-lg btn-primary" id="btn_take_off" v-if="enable_takeoff" @click="takeoff">Take Off</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="btn_take_off" v-if="!enable_takeoff" disabled>Take Off</button>
+                  </div>
+
+                  <div class="col-6" style="margin-top:2rem;">
+                    <button type="button" class="btn btn-lg btn-primary" id="btn_return" v-if="enable_return" @click="returning">Return</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="btn_return" v-if="!enable_return" disabled>Return</button>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-lg btn-danger" style="margin-left:6.5rem;" id="btn_stop" @click="stop">Stop</button>
+              </div>
+
+              <div class="col-2">
+                <label>Cruise Height:</label><br/>
+                <input type="number" step="0.01" min="0" v-model="cruise_height"></input><br/>
+                <label>Turning direction:</label><br/>
+                <button class="btn btn-info" id="left_btn" @click="chooseDirection('left')">left</button>
+                <button class="btn btn-info" id="right_btn" @click="chooseDirection('right')">right</button><br/>
+                <label>Hovering Time(s):</label><br/>
+                <input type="number" min="0" v-model="hover_time"></input><br/>
+              </div>
+
+              <div class="col-6 text-center">
+                <h4>Select Destination</h4>
+                <input type="text" style="margin-top:1rem;" id="dest" v-model="destination"/><br/>
+                <button class="btn btn-success btn-lg" style="margin-top:2rem;" id="btn_start" disabled @click="startFlight"> Start </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" style="margin-left:1rem;">
+          <div class="col-2" style="overflow:auto; margin-right:1rem;">
+            <h3>Log Message</h3>
+            <div>
+                <p v-for="log of logs">{{log}}</p>
+            </div>
+          </div>
+          <div class="col-9 jumbotron" style="padding-bottom:2rem; padding-top:1rem; padding-right:2rem; padding-left:1rem; ">     
+            <div class="row">
+              <div class="col-8">
+                <h3>Monitor Screen</h3>
+                <div class="card" style="width: 685px; height: 565px;">
+                  <div class="card-body">
+                    <p id="cam_topic"><p>
+                    <div id="mjpeg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <h3>UAV Status</h3>
+                <label type="text">ID: </label> <a id="uav_id"></a> <br/>
+                <label type="text">Battery: </label> <a id="uav_battery"> </a> <br/>
+                <label type="text">Status: </label> <a id="uav_status"></a> <br/>
+                <label type="text">Location: </label> <a id="uav_location"> </a> <br/>
+                <label type="text">Take Off Time: </label> <a id="uav_takeOff_time"> </a> <br/>
+                <label type="text">Cruise Height: </label> <a id="uav_height"> </a> <br/>
+                <label type="text">Hovering Delay: </label> <a id="uav_delay"> </a> <br/>
+                <label type="text">Obstacle Detection Distance: </label> <a id="ob_dist"> </a> <br/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript" src="main.js"></script>
+        
+    </body>
+</html>

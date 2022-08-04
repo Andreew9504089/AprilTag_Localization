@@ -1,0 +1,15 @@
+<launch>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+    <arg name="port" value="9090"/>
+  </include>
+  <node name="web_video_server1" pkg="web_video_server" type="web_video_server">
+    <param name="port" type="int" value="8080" />
+    <param name="address" type="string" value="0.0.0.0" />
+    <param name="server_threads" type="int" value="1" />
+    <param name="ros_threads" type="string" value="2" />
+
+    <param name="width" type="int" value="1080" />
+    <param name="height" type="int" value="720" />
+    <param name="quality" type="int" value="90" />
+  </node>
+</launch>
