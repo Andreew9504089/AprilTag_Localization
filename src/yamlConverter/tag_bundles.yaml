@@ -1,26 +1,16 @@
 tag_bundles:
-	[
-		{
-			name: 'bundle_1',
-			parent: 15,
-			child: [16, 17, 18, 19, 69, 68, 5, 6, 7, 8, 9]
-		},
-		{
-			name: 'bundle_2',
-			parent: 55,
-			child: [56, 57, 58, 59, 75, 74, 50, 51, 52, 53, 54]
-		},
-		{
-			name: 'bundle_3',
-			parent: 45,
-			child: [46, 47, 48, 49, 73, 72, 40, 41, 42, 43, 44]
-		},
-		{
-			name: 'bundle_4',
-			parent: 35,
-			child: [36, 37, 38, 39, 71, 70, 25, 26, 27, 28, 29]
-		}
-	]
+  [
+    {
+      name: 'tag_bundles_forward_1',
+      parent: 15,
+      child: [16, 17, 18, 19, 5, 6, 7, 8, 9]
+    },
+    {
+      name: 'tag_bundles_forward_4',
+      parent: 35,
+      child: [36, 37, 38, 39, 25, 26, 27, 28, 29]
+    }
+  ]
 
 
 

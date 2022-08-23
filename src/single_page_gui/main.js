@@ -11,7 +11,6 @@ var app = new Vue({
         message: null,
         enable_takeoff: false,
         enable_return: false,
-        control_pub: null,
         control_signal: null,
         destination: null,
         direction: 1,
@@ -71,10 +70,11 @@ var app = new Vue({
         },
 
         disconnect: function(){
+			delete this.cameraViewer;
             this.ros.close()
             this.connected = false
             console.log('Connection Closed')
-            document.getElementById("cam_topic").style.display = "block";
+            document.getElementById("cam_topic").style.display = "none";
             document.getElementById("mjpeg").style.display = "none";
         },
 

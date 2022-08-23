@@ -1,105 +1,67 @@
-# # Definitions of tags to detect
-#
-# ## General remarks
-#
-# - All length in meters
-# - 'size' refers to the length of the shared border between solid black and solid white rectangle.
-#   See README.md or https://github.com/AprilRobotics/apriltag/wiki/AprilTag-User-Guide#pose-estimation for details.
-# - Ellipsis (...) signifies that the previous element can be repeated multiple times.
-#
-# ## Standalone tag definitions
-# ### Remarks
-#
-# - name is optional
-#
-# ### Syntax
-#
-# standalone_tags:
-#   [
-#     {id: ID, size: SIZE, name: NAME},
-#     ...
-#   ]
-standalone_tags:
-  [
-    {id: 0, size: 0.24, name: "tag0"},
-    {id: 1, size: 0.24, name: "tag1"},
-    {id: 2, size: 0.24, name: "tag2"},
-    {id: 3, size: 0.24, name: "tag3"},
-    {id: 4, size: 0.24, name: "tag4"},
-    {id: 5, size: 0.24, name: "tag5"},
-    {id: 6, size: 0.24, name: "tag6"},
-    {id: 7, size: 0.24, name: "tag7"},
-    {id: 8, size: 0.24, name: "tag8"},
-    {id: 9, size: 0.24, name: "tag9"},
-    {id: 10, size: 0.24, name: "tag10"},
-    {id: 11, size: 0.24, name: "tag11"},
-    {id: 12, size: 0.24, name: "tag12"},
-    {id: 13, size: 0.24, name: "tag13"},
-    {id: 14, size: 0.24, name: "tag14"},
-    {id: 15, size: 0.24, name: "tag15"},
-    {id: 16, size: 0.24, name: "tag16"},
-    {id: 17, size: 0.24, name: "tag17"},
-    {id: 18, size: 0.24, name: "tag18"},
-    {id: 19, size: 0.24, name: "tag19"},
-    {id: 20, size: 0.24, name: "tag20"},
-    {id: 21, size: 0.24, name: "tag21"},
-    {id: 22, size: 0.24, name: "tag22"},
-    {id: 23, size: 0.24, name: "tag23"},
-    {id: 24, size: 0.24, name: "tag24"},
-    {id: 25, size: 0.24, name: "tag25"},
-    {id: 26, size: 0.24, name: "tag26"},
-    {id: 27, size: 0.24, name: "tag27"},
-    {id: 28, size: 0.24, name: "tag28"},
-    {id: 29, size: 0.24, name: "tag29"},
-    {id: 30, size: 0.24, name: "tag30"},
-    {id: 31, size: 0.24, name: "tag31"},
-    {id: 32, size: 0.24, name: "tag32"},
-    {id: 33, size: 0.24, name: "tag33"},
-    {id: 34, size: 0.24, name: "tag34"},
-    {id: 35, size: 0.24, name: "tag35"},
-    {id: 36, size: 0.24, name: "tag36"},
-    {id: 37, size: 0.24, name: "tag37"},
-    {id: 38, size: 0.24, name: "tag38"},
-    {id: 39, size: 0.24, name: "tag39"},
-    {id: 40, size: 0.24, name: "tag40"},
-    {id: 41, size: 0.24, name: "tag41"},
-    {id: 42, size: 0.24, name: "tag42"},
-    {id: 43, size: 0.24, name: "tag43"},
-    {id: 44, size: 0.24, name: "tag44"},
-    {id: 45, size: 0.24, name: "tag45"},
-    {id: 46, size: 0.24, name: "tag46"},
-    {id: 47, size: 0.24, name: "tag47"},
-    {id: 48, size: 0.24, name: "tag48"},
-    {id: 49, size: 0.24, name: "tag49"}
-  ]
-# ## Tag bundle definitions
-# ### Remarks
-#
-# - name is optional
-# - x, y, z have default values of 0 thus they are optional
-# - qw has default value of 1 and qx, qy, qz have default values of 0 thus they are optional
-#
-# ### Syntax
-#
-# tag_bundles:
-#   [
-#     {
-#       name: 'CUSTOM_BUNDLE_NAME',
-#       layout:
-#         [
-#           {id: ID, size: SIZE, x: X_POS, y: Y_POS, z: Z_POS, qw: QUAT_W_VAL, qx: QUAT_X_VAL, qy: QUAT_Y_VAL, qz: QUAT_Z_VAL},
-#           ...
-#         ]
-#     },
-#     ...
-#   ]
-#tag_bundles:
-#  [
-#     {
-#       name: 'husky_apriltag',
-#       layout:
-#         [
-#           {id: 0, size: 1.0, x: 0, y: 0, z: 0, qw: 1.0, qx: 0.0, qy: .0, qz: 0.0},
-#         ]
-#     }
-#  ]
+{standalone_tags: [], tag_bundles: [{layout: [{id: 3, qw: 1.0, qx: 1.20276233, qy: -1.2005808,
+          qz: -1.21826572, size: 0.24, x: 2.02260666, y: -6.00415185, z: 1.83649299},
+        {id: 24, qw: 1.0, qx: -0.01055829, qy: 0.01324981, qz: -1.57887434, size: 0.24,
+          x: 0.98117728, y: -3.01218831, z: -0.06926415}, {id: 23, qw: 1.0, qx: -0.00979381,
+          qy: 0.01133537, qz: -1.58063251, size: 0.24, x: 0.97534427, y: -3.51232479,
+          z: -0.06897367}, {id: 22, qw: 1.0, qx: -0.01259497, qy: 0.00925885, qz: -1.58223499,
+          size: 0.24, x: 0.96895328, y: -4.01184366, z: -0.06864156}, {id: 14, qw: 1.0,
+          qx: -0.01527551, qy: 0.01653126, qz: -1.5722518, size: 0.24, x: -1.99238267,
+          y: -5.9997825, z: -0.03664068}, {id: 0, qw: 1.0, qx: -0.00245567, qy: 0.01068279,
+          qz: -1.56820458, size: 0.24, x: 0.49999558, y: -5.99816261, z: -0.0773909},
+        {id: 21, qw: 1.0, qx: -0.01127419, qy: 0.01174132, qz: -1.57605477, size: 0.24,
+          x: 0.98226471, y: -4.50477555, z: -0.07511666}, {id: 11, qw: 1.0, qx: -0.01707642,
+          qy: 0.02246959, qz: -1.56984753, size: 0.24, x: -3.5057825, y: -6.00041003,
+          z: 0.00874509}, {id: 10, qw: 1.0, qx: -9.24e-06, qy: 0.00495748, qz: -1.56976922,
+          size: 0.24, x: -4.0054369, y: -6.00091505, z: 0.01706754}, {id: 12, qw: 1.0,
+          qx: -0.00105888, qy: 0.00704162, qz: -1.57004646, size: 0.24, x: -3.00559972,
+          y: -5.99979332, z: -0.0035318}, {id: 20, qw: 1.0, qx: -0.00901674, qy: 0.01355265,
+          qz: -1.56907585, size: 0.24, x: 0.997681, y: -4.9981097, z: -0.08326118},
+        {id: 43, qw: 1.0, qx: -0.0088688, qy: 0.01363906, qz: -1.56935679, size: 0.24,
+          x: 0.9985913, y: -5.99763097, z: -0.08715149}, {id: 13, qw: 1.0, qx: -0.01850125,
+          qy: 0.02418397, qz: -1.56982771, size: 0.24, x: -2.50590561, y: -5.99934209,
+          z: -0.0101137}, {id: 2, qw: 1.0, qx: -0.00767091, qy: 0.00752056, qz: -1.58441383,
+          size: 0.24, x: 0.50922679, y: -0.50835189, z: -0.05943135}, {id: 1, qw: 1.0,
+          qx: 1.18768606, qy: -1.21257249, qz: -1.22829691, size: 0.24, x: 2.04698332,
+          y: -0.52797662, z: 1.84931677}, {id: 42, qw: 1.0, qx: -0.0145379, qy: 0.00945433,
+          qz: -1.58526713, size: 0.24, x: 0.00940982, y: -0.50089764, z: -0.05003609},
+        {id: 41, qw: 1.0, qx: -0.01667932, qy: 0.01354092, qz: -1.58519087, size: 0.24,
+          x: -0.48960155, y: -0.49341079, z: -0.03990504}, {id: 4, qw: 1.0, qx: 1.56850437,
+          qy: 0.00167418, qz: -0.02589209, size: 0.24, x: 0.56399489, y: -0.01049146,
+          z: 1.87462905}, {id: 40, qw: 1.0, qx: -0.01272501, qy: 0.01010566, qz: -1.58554771,
+          size: 0.24, x: -0.98923202, y: -0.48595297, z: -0.0298748}, {id: 33, qw: 1.0,
+          qx: -0.02060772, qy: 0.01905434, qz: -1.58525995, size: 0.24, x: -4.4811216,
+          y: -0.43241405, z: 0.04095575}, {id: 34, qw: 1.0, qx: -0.00532803, qy: 0.00095443,
+          qz: -1.58561083, size: 0.24, x: -3.9820463, y: -0.43979246, z: 0.02976166},
+        {id: 31, qw: 1.0, qx: -0.01040103, qy: 0.01193408, qz: -1.58564308, size: 0.24,
+          x: -5.47907024, y: -0.41779282, z: 0.0614371}, {id: 32, qw: 1.0, qx: 0.00428591,
+          qy: -0.01286803, qz: -1.58528186, size: 0.24, x: -4.98088834, y: -0.42509652,
+          z: 0.04868867}, {id: 30, qw: 1.0, qx: -0.02689156, qy: 0.02245008, qz: -1.58482454,
+          size: 0.24, x: -5.97905563, y: -0.41021159, z: 0.0793349}], name: tag_bundles_downward},
+    {layout: [{id: 16, qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24, x: 0.49917243, y: 0.0006515499999997232,
+          z: -0.010794459999999999}, {id: 17, qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24,
+          x: 0.9992944, y: 0.0014889999999994075, z: -0.02004525}, {id: 18, qw: 1.0,
+          qx: 0, qy: 0, qz: 0, size: 0.24, x: 1.51957479, y: 0.00031845999999990937,
+          z: -0.03828505}, {id: 19, qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24, x: 2.51612181,
+          y: 0.5018869399999994, z: -0.05456658}, {id: 5, qw: 1.0, qx: 0, qy: 0, qz: 0,
+          size: 0.24, x: 2.04645999, y: -0.5005133300000004, z: 1.89224317}, {id: 6,
+          qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24, x: -4.48201696, y: -0.0002465100000001996,
+          z: 0.0807346}, {id: 7, qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24, x: -3.9821826500000004,
+          y: 0.0001948399999998074, z: 0.07317113}, {id: 8, qw: 1.0, qx: 0, qy: 0,
+          qz: 0, size: 0.24, x: -3.4831665899999997, y: 0.0005420799999997783, z: 0.061053460000000004},
+        {id: 9, qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24, x: -2.9834293900000004,
+          y: 0.0009259899999998211, z: 0.05430904}, {id: 15, qw: 1.0, qx: 0, qy: 0,
+          qz: 0, size: 0.24, x: 0, y: 0, z: 0}], name: tag_bundles_forward_1}, {layout: [
+        {id: 36, qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24, x: 0.4973690300000002,
+          y: -0.008174390000000031, z: -0.00814567}, {id: 37, qw: 1.0, qx: 0, qy: 0,
+          qz: 0, size: 0.24, x: 0.9964708600000001, y: -0.015686000000000033, z: -0.01858131},
+        {id: 38, qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24, x: 1.4954497800000002,
+          y: -0.02321430000000002, z: -0.02939311}, {id: 39, qw: 1.0, qx: 0, qy: 0,
+          qz: 0, size: 0.24, x: 1.9948115700000002, y: -0.030736650000000032, z: -0.040265510000000004},
+        {id: 25, qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24, x: 4.46912779, y: -2.0644990400000003,
+          z: -0.09021775000000001}, {id: 26, qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24,
+          x: 4.4748921500000005, y: -1.5650344, z: -0.09000333999999999}, {id: 27,
+          qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24, x: 4.4800971, y: -1.06523388,
+          z: -0.08975862000000001}, {id: 28, qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24,
+          x: 4.48572558, y: -0.5653429, z: -0.08964047}, {id: 29, qw: 1.0, qx: 0,
+          qy: 0, qz: 0, size: 0.24, x: 4.49117031, y: -0.06507748000000002, z: -0.09028256000000001},
+        {id: 35, qw: 1.0, qx: 0, qy: 0, qz: 0, size: 0.24, x: 0, y: 0, z: 0}], name: tag_bundles_forward_4}]}
