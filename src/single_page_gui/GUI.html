@@ -53,13 +53,11 @@
               <div class="col-4">
                 <div class="row" style="margin-bottom:2rem;">
                   <div class="col-6" style="margin-top:2rem;">
-                    <button type="button" class="btn btn-lg btn-primary" id="btn_take_off" v-if="enable_takeoff" @click="takeoff">Take Off</button>
-                    <button type="button" class="btn btn-lg btn-primary" id="btn_take_off" v-if="!enable_takeoff" disabled>Take Off</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="btn_take_off" @click="takeoff">Take Off</button>
                   </div>
 
                   <div class="col-6" style="margin-top:2rem;">
-                    <button type="button" class="btn btn-lg btn-primary" id="btn_return" v-if="enable_return" @click="returning">Return</button>
-                    <button type="button" class="btn btn-lg btn-primary" id="btn_return" v-if="!enable_return" disabled>Return</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="btn_return" @click="returning">Return</button>
                   </div>
                 </div>
                 <button type="button" class="btn btn-lg btn-danger" style="margin-left:6.5rem;" id="btn_stop" @click="stop">Stop</button>
