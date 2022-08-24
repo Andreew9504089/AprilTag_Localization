@@ -41,8 +41,10 @@
             <p class="text-muted" v-if="!connected && !failure">Not Connected</p>
             <p class="text-danger" v-if="failure">Error</p>
             <p class="text-success" v-if="connected">Connected</p>
-            <label for="uav_server">UAV_server: </label><br/>
-            <input id="uav_server" type="text" v-model="ws_address"/><br/>
+            <label for="uav_server">UAV_port: </label><br/>
+            <input id="uav_server" type="text" v-model="uav_port"/><br/>
+            <label for="uav_ip">UAV_ip: </label><br/>
+            <input id="uav_ip" type="text" v-model="uav_ip"/><br/>
             <button class="btn btn-danger"  style="margin-top:10px; margin-bottom:10px;" @click="disconnect" v-if="connected">Disconnect</button>
             <button class="btn btn-success" style="margin-top:10px; margin-bottom:10px;" @click="connect" v-if="!connected">Connect</button>
           </div>

@@ -4,7 +4,8 @@ var app = new Vue({
         connected: false,
         failure: false,
         ros: null,
-        ws_address: '9090',
+        uav_port: '9090',
+        uav_ip: 'ws://0.0.0.0',
         logs: [],
         loading: false,
         topic: null,
@@ -22,7 +23,7 @@ var app = new Vue({
             console.log('Connecting...')
 
             this.ros = new ROSLIB.Ros({
-                url: 'ws://0.0.0.0:' + this.ws_address
+                url: this.uav_ip + this.uav_port
             })
 
             this.ros.on('connection', () => {
